@@ -186,3 +186,25 @@ html{
   .color--primary{
     color: var(--primary-color);
   }
+  /* pagination */
+.pagination-list{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  cursor: default;
+}
+.pagination-number-link{
+  text-decoration: none;
+  font-size: 2.0rem;
+  min-width: 40px;
+  height: 30px;
+  margin: 0 20px;
+  padding: 0 10px;
+  cursor: pointer;
+  color: rgba(51, 51, 51, 0.5);
+}
+.pagination-item--active .pagination-number-link{
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 2px;
+}
