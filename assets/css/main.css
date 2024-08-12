@@ -499,6 +499,8 @@
   text-emphasis: none;
   font-size: 1.4rem;
   color: var(--text-color);
+  display: flex;
+  align-items: center;
 }
 .header__cart{
   width: 80px;
