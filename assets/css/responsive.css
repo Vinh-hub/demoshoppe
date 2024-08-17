@@ -1,0 +1,110 @@
+/* Mobile & Tablet */
+@media(max-width: 63.938em){
+    :root{
+        --header-height: 80px;
+        --navbar-height: 0;
+    }
+    .hide-on-mobile-table{
+        display: none;
+    }
+    .container {
+        background-color: #f5f5f5;
+        padding-top: calc(var(--header-height) + var(--header-sort-bar-height) + 5px);
+    }
+    .header{
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+    }
+    .header__cart-list {
+        position: fixed;
+        top: var(--header-height);
+        right: 0;
+        width: 100%;
+        padding: 0 calc((100% - 644px) / 2);
+    }
+    .header__cart-list::before{
+        display: none;
+      }
+    .header__sort-bar{
+        display: flex;
+    }
+    .header__cart{ 
+        width: 70px;
+        margin: 0;
+    }
+    .header__mobile{
+        display: block;
+    }
+}
+/* Mobile */
+@media(max-width: 46.188em){
+    .hide-on-mobile{
+        display: none;
+    }
+    .header{
+        padding: 0 20px;
+    }
+    .container,
+    .end,
+    .end__heading-end{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .end__heading-country-list{
+        display: none;
+    }
+    .pagination-list{
+        padding-left: 0;
+    }
+    .pagination-number-link{
+        text-decoration: none;
+        font-size: 1.8rem;
+        margin: 0 2px;
+    }
+    .end__heading-dowload{
+        display: none;
+    }
+    .header__search{
+        height: 30px;
+    }
+    .header__search-input{
+        padding: 0  0  0 11px ;
+        width: 100%;
+        height: 100%;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        overflow-wrap: break-word;
+        vertical-align: sub;
+    }
+    .header__search__btn-icon {
+        background-color: transparent;
+        width: 30px;
+    }
+    .header__search-icon{
+        color: var(--primary-color);
+    }
+    .end__heading-more{
+        display: none;
+    }
+    .end__heading-end-certificate{
+        height: 120px;
+    }
+    .end-certificate-link{
+        height: 50%;
+    }
+   
+}
+
+/* Tablet */
+@media(min-width: 46.188em) and (max-width: 63.938em){
+    .hide-on-table{
+        display: none;
+    }
+    .header__logo {
+        width: 175px;
+    }
+}
