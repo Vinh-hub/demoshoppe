@@ -100,7 +100,9 @@
     .end-certificate-link{
         height: 50%;
     }
-   
+    .product-item{
+        max-height: 90%;
+    }
 }
 
 /* Tablet */

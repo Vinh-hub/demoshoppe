@@ -940,7 +940,7 @@
   padding-right: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
-  height: 334px;
+  max-height: 334px;
 }
 .product-item-group{
   position: relative;
