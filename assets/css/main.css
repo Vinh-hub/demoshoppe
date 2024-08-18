@@ -143,6 +143,7 @@
 
   .header__sort-item{
     flex: 1;
+    -webkit-tap-highlight-color: transparent;
     /* position: relative;
     padding: 0 50px; */
   }
@@ -574,6 +575,8 @@
   position: relative;
   display: block;
   padding: 5px;
+  -webkit-tap-highlight-color: transparent;
+
 }
 .header__cart-icon{
   font-size: 20px;
@@ -739,6 +742,56 @@
 }
 .footer__cart-added{
   cursor: text;
+}
+/*  */
+.mobile-category{
+  padding-top: var(--header-padding-top);
+  display: none;
+}
+.mobile-category__list{
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  max-width: 100%;
+  overflow-x: auto;/*tao danh sach keo*/
+}
+.mobile-category__list::-webkit-scrollbar {
+  display: none;
+}
+.mobile-category__item{
+  flex-shrink: 0; /*chu khong bi ep thanh doc*/
+  margin: 10px 0 10px 10px;
+  border-radius: 7px;
+}
+.mobile-category__item:nth-of-type(3n-2){
+  background-color: #f69113;
+}
+.mobile-category__item:nth-of-type(3n-1){
+  background-color: #1788f2;
+}
+.mobile-category__item:nth-of-type(3n){
+  background-color: #f53e2d;
+}
+.mobile-category__link{
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 200;
+  width: 108px;
+  line-height: 2rem;
+  -webkit-line-clamp: 2;
+  height: 4rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-align: center;
+  display: block;
+  display: grid;
+  place-content: center;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* container */
@@ -1192,6 +1245,7 @@
   height: 100%;
   display: flex;
   align-items: center;
+  -webkit-tap-highlight-color: transparent;
 }
 .end-certificate-img{
   width: 120px;
