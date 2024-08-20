@@ -1181,6 +1181,7 @@
   margin-bottom: 8px;
   border-radius: 3px;
   box-shadow: 0 1px 2px #3333334a;
+  -webkit-tap-highlight-color: transparent;
 }
 .end__dowload-app-img{
   width: 34px;
@@ -1221,6 +1222,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding-left: 0;
   margin-bottom: 40PX;
 }
 .end__heading-end-item{
